@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ "$1" == "--help" -o "$1" == "-h" ]; then
 echo "Esta es la ayuda"
-echo "servicio.sh"
+echo "servicio.sh [usuario asunto contenido]"
 elif [ "$1" != "" ];then
     if [ "$2" != ""  ]; then
         if [ "$3" != ""  ]; then
