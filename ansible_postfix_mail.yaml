@@ -1,0 +1,8 @@
+---
+- hosts: 127.0.0.1
+  become: yes
+  tasks:
+   - name: INSTALAR POSTFIX
+     apt: name=postfix update_cache=yes state=latest
+   - name: INSTALAR UTILMAIL
+     apt: name=mailutils update_cache=yes state=latest
